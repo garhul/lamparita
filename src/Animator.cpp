@@ -5,7 +5,7 @@ Animator::Animator(NeoPixelBusType* strip) {
   this->_frame_index = 0;
   this->_length = strip->PixelCount();
   this->_spd = 100;
-  this->_spd_delay = 48;
+  this->_spd_delay = 12;
   this->_mode = OFF;
   this->_strip = strip;
 }
@@ -412,15 +412,15 @@ void Animator::test() {
 
   this->_strip->ClearTo(RgbColor(20, 0, 0), 0, this->_length);
   this->_strip->Show();
-  delay(100);
+  delay(500);
 
   this->_strip->ClearTo(RgbColor(0, 20, 0), 0, this->_length);
   this->_strip->Show();
-  delay(100);
+  delay(500);
 
   this->_strip->ClearTo(RgbColor(0, 0, 20), 0, this->_length);
   this->_strip->Show();
-  delay(100);
+  delay(500);
 
   this->_strip->ClearTo(RgbColor(0, 0, 0), 0, this->_length);
   this->_strip->Show();

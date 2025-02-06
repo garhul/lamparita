@@ -1,5 +1,4 @@
 #pragma once
-
 #define __USE_CONTROLS  // Comment this line to disable hardware controls
 
 #include <Animator.h>
